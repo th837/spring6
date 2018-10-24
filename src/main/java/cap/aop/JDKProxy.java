@@ -14,7 +14,6 @@ public class JDKProxy implements InvocationHandler {
                 targetObject.getClass().getInterfaces(), this);
 
     }
-
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         System.out.println("当前日期:" + (new Date()).toString());

@@ -19,7 +19,6 @@ public class CglibProxy implements MethodInterceptor {
         return proxyObj;
 
     }
-
     @Override
     public Object intercept(Object o, Method method, Object[] objects, MethodProxy methodProxy) throws Throwable {
         System.out.println("当前日期:" + (new Date()).toString());
